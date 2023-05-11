@@ -82,15 +82,15 @@
 }
 
 .chip-border-depth.paper {
-    background: #2945c3
+    background: #3e58cf
 }
 
 .chip-border-depth.scissor {
-    background: #c56e14
+    background: #d48d41
 }
 
 .chip-border-depth.rock {
-    background: #9e1734
+    background: #b9314f
 }
 
 .chip-border.paper {
