@@ -1,0 +1,100 @@
+.chip-wrapper {
+    width: clamp(100px, 23vw, 170px);
+    height: clamp(100px, 23vw, 170px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1;
+    transform: translateY(-5px);
+}
+
+.chip-wrapper.big {
+    width: clamp(115px, 25vw, 250px);
+    height: clamp(115px, 25vw, 250px);
+
+}
+
+.chip-wrapper img {
+    width: 45%;
+    z-index: 11;
+}
+
+
+
+.chip-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+    background: #bbbfd2;
+    border-radius: 50%;
+    position: relative;
+    z-index: 10;
+}
+
+.chip-container::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background: var(--bright-text);
+    transform: translateY(5px);
+    z-index: 10;
+}
+
+.chip-wrapper:hover {
+    transform: scale(1.02);
+}
+
+.chip-border {
+    position: absolute;
+    background: red;
+    height: 100%;
+    width: 100%;
+    transform: translateY(2px) scale(1.05);
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+.chip-border-depth {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    bottom: 0;
+    left: 0;
+    transform: scale(1.05) translateY(8px);
+    filter: brightness(0.6);
+    z-index: 8;
+    background: black;
+}
+
+.chip-border-depth.paper {
+    background: #2945c3
+}
+
+.chip-border-depth.scissor {
+    background: #c56e14
+}
+
+.chip-border-depth.rock {
+    background: #9e1734
+}
+
+.chip-border.paper {
+    background: var(--paper-grad);
+}
+
+.chip-border.scissor {
+    background: var(--scissor-grad);
+}
+
+.chip-border.rock {
+    background: var(--rock-grad);
+}

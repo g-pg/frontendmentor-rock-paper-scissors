@@ -1,0 +1,77 @@
+.score-table-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 268px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    border: 2px solid var(--header-outline);
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    gap: 1rem;
+}
+
+.game-title {
+    color: var(--bright-text);
+    font-weight: 800;
+    font-size: clamp(1.2rem, 3vw, 2rem);
+
+    text-transform: uppercase;
+    /* max-width: 50px; */
+    line-height: 0.85;
+}
+
+.score-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--bright-text);
+    border-radius: 12px;
+    padding: 0.7rem 2.5rem;
+    position: relative;
+}
+
+.score-wrapper h2 {
+    color: var(--score-text);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+.score-wrapper h3 {
+    margin-top: -0.2rem;
+    color: var(--dark-text);
+    font-size: clamp(2rem, 8vw, 3.5rem);
+
+}
+
+.reset-icon-wrapper {
+    position: absolute;
+    bottom: -3px;
+    right: 8px;
+    cursor: pointer;
+}
+
+.reset-icon-wrapper svg {
+    width: clamp(15px, 1vw, 18px);
+    color: var(--score-text);
+}
+
+.reset-icon-wrapper svg:hover {
+    color: black;
+}
+
+@media (max-width: 1000px) {
+    .score-table-wrapper {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .score-wrapper {
+        padding: 0.5rem 1.2rem;
+    }
+}
