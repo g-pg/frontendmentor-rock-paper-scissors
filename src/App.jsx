@@ -1,6 +1,6 @@
 import "./reset.css";
 import "./globals.css";
-import Game from "./pages/game";
+import Game from "./pages/Game";
 
 function App() {
 	return (
