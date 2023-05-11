@@ -8,12 +8,16 @@
     cursor: pointer;
     z-index: 1;
     transform: translateY(-5px);
+    border-radius: 50%;
 }
 
 .chip-wrapper.big {
     width: clamp(115px, 25vw, 250px);
     height: clamp(115px, 25vw, 250px);
+}
 
+.chip-wrapper.big:hover {
+    box-shadow: unset;
 }
 
 .chip-wrapper img {
@@ -47,7 +51,9 @@
 }
 
 .chip-wrapper:hover {
-    transform: scale(1.02);
+    -webkit-box-shadow: 0px 5px 30px 0px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 0px 5px 30px 0px rgba(255, 255, 255, 0.75);
+    box-shadow: 0px 5px 30px 0px rgba(255, 255, 255, 0.75);
 }
 
 .chip-border {
