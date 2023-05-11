@@ -27,6 +27,18 @@ export default function Game() {
 					/>
 				</div>
 				{showRules && <RulesModal showRules={showRules} setShowRules={setShowRules} />}
+				<footer
+					style={{
+						margin: "0 auto 0.5rem auto",
+						color: "white",
+						fontSize: "0.8rem",
+					}}
+				>
+					Challenge by Frontend Mentor. Coded by{" "}
+					<a href="https://github.com/g-pg" style={{ color: "white" }}>
+						Gabriel Gusso
+					</a>
+				</footer>
 			</div>
 		</main>
 	);
